@@ -1,0 +1,151 @@
+html {
+	background-color: #eee;
+}
+
+body {
+	padding: 30px;
+	background-color: #fff;
+	color: #1e1e1e;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	padding-bottom: 60px;
+}
+
+main {
+	padding: 30px 0px 60px 0px;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+.logo {
+	margin-right: auto;
+}
+
+.logo img {
+	width: 400px;
+}
+
+.form-divide {
+	padding: 20px;
+	font-size: 80%;
+	font-weight: bold;
+	text-align: center;
+}
+
+.content-contact {
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+}
+
+.content-list .media .icon {
+	padding-right: 10px;
+	width: 40px;
+	text-align: center;
+}
+
+.content-list .media .icon i {
+	font-size: 30px;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	padding-top: 20px;
+	font-size: 80%;
+	border-top: solid 1px #eee;
+	color: #0C98D5;
+}
+
+img.icon-rentbutter {
+	padding-left: 2px;
+	padding-bottom: 3px;
+	height: 16px;
+	fill: #0C98D5;
+}
+
+img.icon-equalhousing {
+	padding-right: 4px;
+	padding-bottom: 4px;
+	height: 16px;
+	fill: #0C98D5;
+}
+
+img.logo-transunion {
+	padding-right: 4px;
+	padding-bottom: 14px;
+	height: 36px;
+	fill: #0C98D5;
+}
+
+.btn-primary {
+	background-color: #0C98D5;
+	border-color: none;
+}
+
+a {
+	color: #0C98D5;
+}
+
+@media all and (max-width: 992px) {
+	body {
+		padding: 10px;
+	}
+
+	h1 {
+		margin-top: 20px;
+		font-size: 26px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+
+	header {
+		flex-direction: column;
+		padding-bottom: 30px;
+	}
+
+	header .form-inline .form-control, header .form-inline .btn  {
+		width: 100%;
+	}
+
+	main {
+		padding: 0;
+	}
+
+	main > div {
+		flex-direction: column-reverse;
+	}
+
+	main form {
+		padding-bottom: 30px;
+	}
+
+	.content-contact {
+		display: none;
+	}
+
+	.logo {
+		margin-right: 0;
+	}
+
+	.logo img {
+		padding: 20px 40px;
+	}
+
+	footer {
+		flex-direction: column;
+		text-align: center
+	}
+}
