@@ -23,7 +23,7 @@
           <h5 class="d-none d-lg-block text-right m-0">Contact Us to Get Started!</h5>
           <div class="content-contact">
             <div class="p-2">
-              <i class="fas fa-phone-alt"></i> 888-933-1000 
+              <i class="fas fa-phone-alt"></i> 312-448-6605 
             </div>
             <div class="p-2">
               <i class="fas fa-envelope"></i> <a href="mailto:hello@rentbutter.com">hello@rentbutter.com</a>
@@ -112,15 +112,25 @@
           </div>
 
           <div class="col-lg-4 offset-lg-1">
-            <form>
-              <h3>Landlord Login</h3>
-              <div class="form-group">
-                <input type="email" class="form-control" id="loginEmail" placeholder="Email">
+            <form id="JH-form">
+              <h3>Ready for the Just Housing Ordinance?<br>Rent Butter is here to help!</h3>
+              <div id="form-confirm">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="JH_email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="JH_company" placeholder="Company Name">
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="JH_units">
+                    <option value="" disabled selected>Select number of units</option>
+                    <option value="1-49">1-49 units</option>
+                    <option value="50-999">50-999 units</option>
+                    <option value="1000+">1000+ units</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-100" id="submit-form">Request a Trial Account</button>
               </div>
-              <div class="form-group">
-                <input type="password" class="form-control" id="loginEmail" placeholder="Password">
-              </div>
-              <button type="submit" class="btn btn-primary w-100">Login</button>
             </form>
           </div>
         </div>
@@ -137,8 +147,9 @@
       </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="utils.js"></script>
   </body>
 </html>
